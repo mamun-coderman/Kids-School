@@ -1,0 +1,162 @@
+
+/* common css starts here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #f7f7f7;
+    --sky-blue:  #01acfd;
+    --orange: #fea301;
+    --black: #111;
+}
+
+
+:root{
+    --font-family: "Quicksand", sans-serif;
+    --second-family:  "Raleway", sans-serif;
+    --third-family:  "Font Awesome 5 Brands", sans-serif;
+    --font3:  "Font Awesome 5 Free", sans-serif;
+}
+
+.dis-flex{
+    display: flex;
+}
+
+/* commont css ends */
+
+
+/* header part menubar for mobile starts here */
+header{
+    padding: 0.75rem 1rem;
+}
+.navigation-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    align-items: center;
+}
+
+.logo > h3{
+    font-family:  var(--font-family);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 94%;
+    color: var(--black);
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--sky-blue);
+}
+
+.menu{
+    gap: 2rem;
+    display: none;
+}
+
+.menu > li{
+    list-style: none;
+}
+
+.menu > li > a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+#Home{
+    font-weight: 700;
+    color: var(--orange);
+}
+
+
+#About{
+    font-weight: 500;
+    color: var(--sky-blue);
+}
+
+#Facilities{
+    font-weight: 500;
+    color: #05d4df;
+}
+
+#Admission{
+    font-weight: 500;
+    color:  #5d58ef;
+}
+
+.menu > li:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s 0.1s;
+}
+
+.navigation-bar > a{
+    text-decoration: none;
+    padding: 0.63rem 2.75rem;
+    border-radius: 0.75rem;
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 150%;
+    background-color: var(--orange);
+    color:  #fff;
+    display: none;
+}
+
+.navigation-bar > a:hover{
+    transform: scale(1.1);
+    transition: transform 1s 0.1s;
+}
+
+#menu-toggle:checked ~ .menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    text-align: center;
+    background-color: rgb(252, 252, 221);
+    width: 50%;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+/* header part for mobile ends */
+
+/* header part styling for desktop device starts here */
+
+@media screen and (min-width: 768px){
+    header{
+        padding: 1.25rem 8.75rem;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .navigation-bar a{
+        display: block;
+    }
+
+}
+
+/* header part styling for desktop ends here */
+
