@@ -166,11 +166,12 @@ header{
 
 /* main part starts here */
 
-/* hero section starts here */
-
 main{
     padding: 0.75rem 1rem;
 }
+
+/* hero section for mobile starts here */
+
 
 .hero-section{
     flex-direction: column;
@@ -226,4 +227,31 @@ main{
     color: #fff;
 }
 
+/* hero section for mobile ends */
+
+/* main and hero section for desktop starts here */
+
+@media screen and (min-width: 768px){
+    main{
+        padding: 1.25rem 8.75rem;
+    }
+
+    .hero-section{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.12rem;
+    }
+
+    .hero-photo > img{
+        width: 100%;
+    }
+
+    .hero-content{
+        text-align: left;
+    }
+
+}
+
 /* hero section for desktop ends */
+
