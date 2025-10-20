@@ -174,6 +174,7 @@ main{
 
 
 .hero-section{
+    padding: 1.25rem 1rem;
     flex-direction: column;
     gap: 1.25rem;
 }
@@ -254,4 +255,36 @@ main{
 }
 
 /* hero section for desktop ends */
+
+/* curiculum section for mobile starts here */
+
+.curriculum-section{
+    margin: 2.5rem 0; 
+}
+
+.heading-common{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.card-container{
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card-one, .card-two, .card-three{
+    
+}
+
+.card-heading{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 125%;
+    color: #202020;
+    text-align: center;
+}
 
