@@ -210,7 +210,7 @@ main{
 .hero-content > p{
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.87rem;
     color: var(--black);
     margin-top: 1.12rem;
     margin-bottom: 1.23rem;
@@ -244,12 +244,34 @@ main{
         gap: 3.12rem;
     }
 
-    .hero-photo > img{
-        width: 100%;
+    .hero-photo{
+        flex: 1;
+        text-align: right;
     }
 
     .hero-content{
         text-align: left;
+        flex: 1;
+    }
+
+    .hero-content > h1{
+        font-size: 3.5rem;
+        line-height: 109%;
+    }
+
+    .hero-content > p{
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-design{
+        text-decoration: none;
+        padding: 0.6rem 1.6rem;
+        border-radius: 0.75rem;
+        font-size: 1.25rem;
+        line-height: 150%;
     }
 
 }
@@ -273,10 +295,36 @@ main{
 .card-container{
     flex-direction: column;
     gap: 0.75rem;
+    margin-top: 1.25rem;
 }
 
 .card-one, .card-two, .card-three{
-    
+    border-radius: 0.8rem;
+    padding: 2.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.37rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-one{
+    border: 0.64px solid #def5ff;
+    box-shadow: inset 0 0 19px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg,  #def5ff 0%, rgba(255, 255, 255, 0) 40%);
+}
+
+
+.card-two{
+    border: 0.64px solid #fff4dc;
+    box-shadow: inset 0 0 19px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%);
+}
+
+.card-three{
+    border: 0.64px solid #f2e8ff;
+    box-shadow: inset 0 0 19px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg,  #eee1ff 0%, rgba(255, 255, 255, 0) 40%);
 }
 
 .card-heading{
@@ -287,4 +335,88 @@ main{
     color: #202020;
     text-align: center;
 }
+
+.card-text, .card-link{
+    font-weight: 500;
+    font-size: 0.62rem;
+    line-height: 188%;
+}
+
+.card-text{
+    font-family: var(--second-family);
+    color: #808080;
+}
+
+.card-link{
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+#card-link-1{
+    color:  #64c8ff;
+}
+
+#card-link-3{
+    color: #8700ff;
+}
+
+#card-link-2{
+    color:  #f0aa00;
+}
+
+/* carriculum part for mobile ends and for desktop starts  */
+
+@media screen and (min-width: 768px) {
+
+    .curriculum-section{
+        background-image: url(../assets/bg.png); 
+    }
+
+    .heading-common{
+        font-size: 2.87rem;
+    }
+
+    .card-container{
+        flex-direction: row;
+        gap: 1.75rem;
+        margin-top: 5rem;
+    }
+
+    .card-one, .card-two, .card-three{
+        border-radius: 1.18rem;
+        gap: 1.75rem;
+    }
+
+    .card-heading{
+        font-size: 1.5rem;
+    }
+
+    .card-text, .card-link{
+        font-size: 1rem;
+    }
+
+    .chevron{
+        margin-top: 5rem;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .chevron > span{
+        padding: 0.8rem;
+        border-radius: 100%;
+        font-family: var(--font3);
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 100%;
+        text-align: center;
+        color: #fff;
+        background-color: var(--orange);
+        
+    }
+
+}
+
+/* carriculum section for desktop ends */
+
+
 
