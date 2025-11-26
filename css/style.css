@@ -370,7 +370,7 @@ main{
 
     .curriculum-section{
         background-image: url(../assets/bg.png); 
-    }
+    } 
 
     .heading-common{
         font-size: 2.87rem;
@@ -437,6 +437,7 @@ main{
     flex-direction: column;
 }
 
+
 .card-photo{
     flex: 1;
 }
@@ -450,5 +451,56 @@ main{
 .card-content{
     padding: 1rem;
     flex: 1;
+}
+
+.card-content > h4{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 187%;
+    color: #000;
+}
+
+.blog-card > span{
+    background-color: #5d58f0;
+    border-radius: 1.7rem;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 0.62rem;
+    line-height: 187%;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    width: 7rem;
+    padding: 0.6rem 0.3rem;
+    position: relative;
+    bottom: 1.5rem;
+    left: 30%;
+    right: 30%;
+    
+}
+
+/* 
+
+#blog-card-6{
+    position: relative;
+    bottom: 3rem;
+}
+
+*/
+
+.btn-div{
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-design{
+    border-radius: 0.75rem;
+    padding: 0.7rem 1rem;
+    background-color: #000;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: #fff;
 }
 
