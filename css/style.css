@@ -428,6 +428,8 @@ header{
 
 /* carriculum section for desktop ends */
 
+/* our story part for mobile starts here */
+
 
 .our-story-part{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 35%, #fff4dc 60%);
@@ -512,7 +514,7 @@ header{
 }
 
 
-/* styles for desktop starts here */
+/* our story part styles for desktop starts here */
 
 @media screen and (min-width: 768px) {
     
@@ -562,6 +564,107 @@ header{
     }
     .card-content > h4{
         font-size: 1rem;
+    }
+
+}
+
+
+/* our story part ends here */
+
+/*  footer part starts here */
+
+footer{
+    background-color: var(--sky-blue);
+    padding: 3.75rem 1rem;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-info > .info-flex{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.info-flex > h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 94%;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.footer-info > p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 1.4rem;
+}
+
+/* footer-info ends and footer-links started */
+
+.footer-links > h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-menu > li{
+    list-style: none;
+}
+
+.footer-menu > li > a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-menu > li > a:hover{
+    background-color: #fff;
+    color: #000;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* footer-links ends and footer-social started */
+
+.footer-social > h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 2.25rem;
+}
+
+/* footer-social ends */
+
+/* footer section styles for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    footer{
+        padding: 7.5rem 8.75rem;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 }
