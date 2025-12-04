@@ -593,7 +593,7 @@ footer{
 .info-flex > h2{
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2.2rem;
     line-height: 94%;
     color: #fff;
     margin-top: 5px;
@@ -602,7 +602,7 @@ footer{
 .footer-info > p{
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     margin-top: 1.4rem;
 }
@@ -612,7 +612,7 @@ footer{
 .footer-links > h3{
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
 }
 
@@ -631,7 +631,7 @@ footer{
     text-decoration: none;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -647,7 +647,7 @@ footer{
 .footer-social > h3{
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.4rem;
     line-height: 100%;
     color: #fff;
     margin-bottom: 2.25rem;
@@ -663,8 +663,40 @@ footer{
     }
 
     .footer-container{
+        width: 100%;
+        gap: 0;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .info-flex > h2{
+        font-size: 2.63rem;
+    }
+
+    .footer-info > p{
+        font-size: 1.25rem;
+    }
+    /* footer info ends and footer links starts */
+
+    .footer-links > h3{
+        font-size: 1.5rem;
+    }
+
+    .footer-menu{
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .footer-menu > li > a{
+        font-size: 1.25rem;
+    }
+
+    /* footer-links ends and footer-social started */
+
+    .footer-social > h3{
+        font-size: 1.6rem;
     }
 
 }
+
+/* footer part ends */
